@@ -1,0 +1,15 @@
+﻿@model webquanlydouong.Models.Order
+
+<h2>Chi tiết đơn hàng</h2>
+
+<p>Mã đơn hàng: @Model.Id</p>
+<p>Ngày đặt hàng: @Model.OrderDate</p>
+<p>Trạng thái: @Model.Status</p>
+
+<h3>Sản phẩm trong đơn hàng:</h3>
+<ul>
+    @foreach (var product in Model.Products)
+    {
+            <li>@product.Name</li>
+    }
+</ul>

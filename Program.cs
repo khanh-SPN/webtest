@@ -13,7 +13,7 @@ builder.Services.AddSession(options =>
 // Đăng ký ApplicationDbContext với SQLite
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 // Bỏ Identity hoàn toàn (không sử dụng UserManager và SignInManager nữa)
 // builder.Services.AddIdentity<User, IdentityRole>() sẽ bị xóa
 

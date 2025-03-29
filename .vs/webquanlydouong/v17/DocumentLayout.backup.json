@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\views\\shared\\_layout.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:views\\shared\\_layout.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\views\\shared\\_validationscriptspartial.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\views\\_viewstart.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:views\\_viewstart.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\views\\_viewimports.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:views\\_viewimports.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\appsettings.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:appsettings.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\views\\menu\\cart.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:views\\menu\\cart.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\views\\menu\\index.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:views\\menu\\index.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\views\\menu\\orderdetails.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:views\\menu\\orderdetails.cshtml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|c:\\users\\khanh\\desktop\\new folder\\webtest\\webtest\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61EE3D-46EA-459C-89F4-3537F29B9F12}|webquanlydouong.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA0wEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T13:48:19.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T13:46:13.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-29T13:44:14.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T12:33:13.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T13:46:02.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-29T13:44:11.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-29T13:43:59.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\Menu\\Cart.cshtml",
+              "RelativeDocumentMoniker": "Views\\Menu\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\Menu\\Cart.cshtml",
+              "RelativeToolTip": "Views\\Menu\\Cart.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-29T13:06:54.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Models\\CartItem.cs",
+              "RelativeToolTip": "Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T13:05:11.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\Menu\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Menu\\Index.cshtml",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\Menu\\Index.cshtml",
+              "RelativeToolTip": "Views\\Menu\\Index.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAswEMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-29T12:58:51.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-29T12:30:51.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-29T13:44:17.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\Menu\\OrderDetails.cshtml",
+              "RelativeDocumentMoniker": "Views\\Menu\\OrderDetails.cshtml",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Views\\Menu\\OrderDetails.cshtml",
+              "RelativeToolTip": "Views\\Menu\\OrderDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-29T13:07:15.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T12:52:49.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "Controllers\\MenuController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAmwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T12:32:18.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T12:30:18.422Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code Thue\\jobforQuoc\\webquanlydouong\\webquanlydouong.csproj": {}
+    "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\webquanlydouong.csproj": {}
   },
   "projects": {
-    "D:\\Code Thue\\jobforQuoc\\webquanlydouong\\webquanlydouong.csproj": {
+    "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\webquanlydouong.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code Thue\\jobforQuoc\\webquanlydouong\\webquanlydouong.csproj",
+        "projectUniqueName": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\webquanlydouong.csproj",
         "projectName": "webquanlydouong",
-        "projectPath": "D:\\Code Thue\\jobforQuoc\\webquanlydouong\\webquanlydouong.csproj",
+        "projectPath": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\webquanlydouong.csproj",
         "packagesPath": "C:\\Users\\khanh\\.nuget\\packages\\",
-        "outputPath": "D:\\Code Thue\\jobforQuoc\\webquanlydouong\\obj\\",
+        "outputPath": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,6 +63,10 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

@@ -1,0 +1,24 @@
+﻿@model List<webquanlydouong.Models.CartItem>
+
+<h2 class="text-center mb-4">Giỏ hàng</h2>
+
+@if (Model.Count == 0)
+{
+        <p>Giỏ hàng của bạn trống.</p>
+}
+else
+{
+        <ul class="list-group">
+        @foreach (var item in Model)
+        {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>@item.ProductName</strong><br />
+                            <span class="text-muted">Giá: @item.Price VND</span>
+                        </div>
+                        <span class="badge bg-secondary rounded-pill">Số lượng: @item.Quantity</span>
+                    </li>
+        }
+        </ul>
+        <a href="@Url.Action("Checkout", "Menu")" class="btn btn-primary mt-3">Order</a>
+}

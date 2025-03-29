@@ -27,56 +27,50 @@
         <ul class="list-group">
             @foreach (var product in Model.Where(p => p.Category == "Drink"))
             {
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <strong>@product.Name</strong><br />
+                                <span class="text-muted">@product.Description</span>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">Giá: @product.Price VND</span>
+                            <a href="@Url.Action("AddToCart", "Menu", new { productId = product.Id, quantity = 1 })" class="btn btn-success btn-sm">Thêm vào giỏ</a>
+                        </li>
+            }
+        </ul>
+    </div>
+
+    <!-- Bánh -->
+    <div class="tab-pane fade" id="cake" role="tabpanel" aria-labelledby="cake-tab">
+        <ul class="list-group">
+            @foreach (var product in Model.Where(p => p.Category == "Cake"))
+            {
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <div>
                             <strong>@product.Name</strong><br />
                             <span class="text-muted">@product.Description</span>
                         </div>
                         <span class="badge bg-primary rounded-pill">Giá: @product.Price VND</span>
+                        <a href="@Url.Action("AddToCart", "Menu", new { productId = product.Id, quantity = 1 })" class="btn btn-success btn-sm">Thêm vào giỏ</a>
                     </li>
             }
         </ul>
     </div>
 
-    <!-- Bánh -->
-<div class="tab-pane fade" id="cake" role="tabpanel" aria-labelledby="cake-tab">
-    <ul class="list-group">
-            @foreach (var product in Model.Where(p => p.Category == "Cake"))
-            {
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div>
-                        <strong>@product.Name</strong><br />
-                        <span class="text-muted">@product.Description</span>
-                    </div>
-                    <span class="badge bg-primary rounded-pill">Giá: @product.Price VND</span>
-                </li>
-            }
-            @if (!Model.Any(p => p.Category == "Cake"))
-            {
-                <li class="list-group-item">Chưa có sản phẩm trong danh mục Bánh</li>
-            }
-    </ul>
-</div>
-
-<!-- Kem -->
-<div class="tab-pane fade" id="icecream" role="tabpanel" aria-labelledby="icecream-tab">
-    <ul class="list-group">
+    <!-- Kem -->
+    <div class="tab-pane fade" id="icecream" role="tabpanel" aria-labelledby="icecream-tab">
+        <ul class="list-group">
             @foreach (var product in Model.Where(p => p.Category == "Ice Cream"))
             {
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div>
-                        <strong>@product.Name</strong><br />
-                        <span class="text-muted">@product.Description</span>
-                    </div>
-                    <span class="badge bg-primary rounded-pill">Giá: @product.Price VND</span>
-                </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>@product.Name</strong><br />
+                            <span class="text-muted">@product.Description</span>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Giá: @product.Price VND</span>
+                        <a href="@Url.Action("AddToCart", "Menu", new { productId = product.Id, quantity = 1 })" class="btn btn-success btn-sm">Thêm vào giỏ</a>
+                    </li>
             }
-            @if (!Model.Any(p => p.Category == "Ice Cream"))
-            {
-                <li class="list-group-item">Chưa có sản phẩm trong danh mục Kem</li>
-            }
-    </ul>
-</div>
-
+        </ul>
+    </div>
 
 </div>

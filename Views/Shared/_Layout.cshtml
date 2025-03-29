@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - YourProject</title>
+    <title>@ViewData["Title"] - Katinat-Shop</title>
 
     <!-- Tải Bootstrap và jQuery -->
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -14,14 +14,23 @@
 </head>
 <body>
     @RenderSection("Scripts", required: false)
+
+   @using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
     @{
-        var userEmail = TempData["UserEmail"] as string;
-        var userRole = TempData["UserRole"] as string;
+        var userEmail = HttpContextAccessor.HttpContext?.Session?.GetString("UserEmail");
+        var userRole = HttpContextAccessor.HttpContext?.Session?.GetString("UserRole");
+
+        // Lấy giỏ hàng và tính tổng số lượng
+        
+        var totalQuantity = ViewData["CartQuantity"] != null ? (int)ViewData["CartQuantity"] : 0;  // Tổng số lượng sản phẩm trong giỏ hàng
     }
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">YourProject</a>
+        <a class="navbar-brand" href="@Url.Action("Index", "Home")">Katinat-Shop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,36 +40,44 @@
                     {
                         if (userRole == "Admin")
                         {
-                                <li class="nav-item">
-                                    <a class="nav-link" href="@Url.Action("Index", "Product")">Quản lý sản phẩm</a>
-                                </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="@Url.Action("Index", "Product")">Quản lý sản phẩm</a>
+                                        </li>
                         }
                         else if (userRole == "User")
                         {
-                                <li class="nav-item">
-                                    <a class="nav-link" href="@Url.Action("Index", "Menu")">Menu sản phẩm</a>
-                                </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="@Url.Action("Index", "Menu")">Menu sản phẩm</a>
+                                        </li>
                         }
 
-                        <!-- Đăng xuất -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Logout", "Account")">Đăng xuất</a>
-                        </li>
+                            <!-- Giỏ hàng -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Cart", "Menu")">
+                                    Giỏ hàng (@totalQuantity)  <!-- Hiển thị số lượng sản phẩm trong giỏ -->
+                                </a>
+                            </li>
+
+                            <!-- Đăng xuất -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Logout", "Account")">Đăng xuất</a>
+                            </li>
                     }
                     else
                     {
-                        <!-- Đăng nhập/Đăng ký cho người dùng chưa đăng nhập -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Login", "Account")">Đăng nhập</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Register", "Account")">Đăng ký</a>
-                        </li>
+                            <!-- Đăng nhập/Đăng ký cho người dùng chưa đăng nhập -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Login", "Account")">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Register", "Account")">Đăng ký</a>
+                            </li>
                     }
             </ul>
         </div>
     </div>
 </nav>
+
     <!-- Nội dung của trang con -->
     <div class="container mt-4">
         @RenderBody() <!-- Nội dung trang con sẽ được hiển thị tại đây -->
