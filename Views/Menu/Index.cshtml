@@ -1,0 +1,82 @@
+﻿@model IEnumerable<webquanlydouong.Models.Product>
+
+@{
+    ViewData["Title"] = "Menu - Đồ uống";
+}
+
+<h2 class="text-center mb-4">Menu - Đồ uống, Bánh và Kem</h2>
+
+<!-- Tabs for product categories -->
+<ul class="nav nav-tabs" id="productTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="drink-tab" data-bs-toggle="tab" href="#drink" role="tab" aria-controls="drink" aria-selected="true">Đồ uống</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="cake-tab" data-bs-toggle="tab" href="#cake" role="tab" aria-controls="cake" aria-selected="false">Bánh</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="icecream-tab" data-bs-toggle="tab" href="#icecream" role="tab" aria-controls="icecream" aria-selected="false">Kem</a>
+    </li>
+</ul>
+
+<!-- Tab content -->
+<div class="tab-content mt-3" id="productTabsContent">
+
+    <!-- Đồ uống -->
+    <div class="tab-pane fade show active" id="drink" role="tabpanel" aria-labelledby="drink-tab">
+        <ul class="list-group">
+            @foreach (var product in Model.Where(p => p.Category == "Drink"))
+            {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>@product.Name</strong><br />
+                            <span class="text-muted">@product.Description</span>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Giá: @product.Price VND</span>
+                    </li>
+            }
+        </ul>
+    </div>
+
+    <!-- Bánh -->
+<div class="tab-pane fade" id="cake" role="tabpanel" aria-labelledby="cake-tab">
+    <ul class="list-group">
+            @foreach (var product in Model.Where(p => p.Category == "Cake"))
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>@product.Name</strong><br />
+                        <span class="text-muted">@product.Description</span>
+                    </div>
+                    <span class="badge bg-primary rounded-pill">Giá: @product.Price VND</span>
+                </li>
+            }
+            @if (!Model.Any(p => p.Category == "Cake"))
+            {
+                <li class="list-group-item">Chưa có sản phẩm trong danh mục Bánh</li>
+            }
+    </ul>
+</div>
+
+<!-- Kem -->
+<div class="tab-pane fade" id="icecream" role="tabpanel" aria-labelledby="icecream-tab">
+    <ul class="list-group">
+            @foreach (var product in Model.Where(p => p.Category == "Ice Cream"))
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>@product.Name</strong><br />
+                        <span class="text-muted">@product.Description</span>
+                    </div>
+                    <span class="badge bg-primary rounded-pill">Giá: @product.Price VND</span>
+                </li>
+            }
+            @if (!Model.Any(p => p.Category == "Ice Cream"))
+            {
+                <li class="list-group-item">Chưa có sản phẩm trong danh mục Kem</li>
+            }
+    </ul>
+</div>
+
+
+</div>

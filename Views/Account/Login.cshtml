@@ -1,0 +1,36 @@
+﻿@model webquanlydouong.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Đăng nhập";
+}
+
+<h2>Đăng nhập</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" id="Email" name="Email" value="@Model?.Email" required />
+        @if (!string.IsNullOrEmpty(ViewData["EmailError"]?.ToString()))
+        {
+                <div class="text-danger">@ViewData["EmailError"]</div>
+        }
+    </div>
+    <div class="form-group">
+        <label for="Password">Mật khẩu</label>
+        <input type="password" class="form-control" id="Password" name="Password" required />
+        @if (!string.IsNullOrEmpty(ViewData["PasswordError"]?.ToString()))
+        {
+                <div class="text-danger">@ViewData["PasswordError"]</div>
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+
+    @if (TempData["LoginError"] != null)
+    {
+            <div class="text-danger mt-3">
+            @TempData["LoginError"]
+            </div>
+    }
+</form>
+
+<p>Chưa có tài khoản? <a href="/Account/Register">Đăng ký ngay</a></p>

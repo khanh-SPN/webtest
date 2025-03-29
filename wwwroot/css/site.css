@@ -1,0 +1,94 @@
+/* 1. Banner Section */
+.banner-section {
+    position: relative;
+    height: 500px;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.banner-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.banner-subtitle {
+    font-size: 20px;
+}
+
+/* 2. Product Sections */
+.product-section {
+    padding: 50px 15px;
+}
+
+.product-title {
+    color: #bf9369;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 36pt;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    color: #bf9369;
+    font-size: 16pt;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #bf9369;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #9f7b54;
+}
+
+/* 3. Image Styling */
+img.rounded {
+    border-radius: 15px;
+    width: 1296px;
+    height:auto;
+    
+}
+
+/* 4. Responsive Design */
+@media (max-width: 767px) {
+    .banner-title {
+        font-size: 36px;
+    }
+
+    .banner-subtitle {
+        font-size: 18px;
+    }
+
+    .product-title {
+        font-size: 28pt;
+    }
+
+    .product-description {
+        font-size: 14pt;
+    }
+}

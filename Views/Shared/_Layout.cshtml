@@ -1,0 +1,104 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - YourProject</title>
+
+    <!-- Tải Bootstrap và jQuery -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    @RenderSection("Scripts", required: false)
+    @{
+        var userEmail = TempData["UserEmail"] as string;
+        var userRole = TempData["UserRole"] as string;
+    }
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">YourProject</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                    @if (!string.IsNullOrEmpty(userEmail))
+                    {
+                        if (userRole == "Admin")
+                        {
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Index", "Product")">Quản lý sản phẩm</a>
+                                </li>
+                        }
+                        else if (userRole == "User")
+                        {
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Index", "Menu")">Menu sản phẩm</a>
+                                </li>
+                        }
+
+                        <!-- Đăng xuất -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Logout", "Account")">Đăng xuất</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <!-- Đăng nhập/Đăng ký cho người dùng chưa đăng nhập -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Login", "Account")">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Register", "Account")">Đăng ký</a>
+                        </li>
+                    }
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Nội dung của trang con -->
+    <div class="container mt-4">
+        @RenderBody() <!-- Nội dung trang con sẽ được hiển thị tại đây -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <div class="hgrid">
+            <div class="hgrid-span-4 footer-column">
+                <section id="text-11" class="widget widget_text">			
+                    <div class="textwidget">
+                        <p>&nbsp;</p>
+                        <p><img loading="lazy" decoding="async" class="wp-image-1651 size-medium aligncenter" src="http://katinat.vn/wp-content/uploads/2024/04/Kat-Logo-fa-rgb-02-removebg-preview-300x104.png" alt="" width="300" height="104" srcset="https://katinat.vn/wp-content/uploads/2024/04/Kat-Logo-fa-rgb-02-removebg-preview-300x104.png 300w, https://katinat.vn/wp-content/uploads/2024/04/Kat-Logo-fa-rgb-02-removebg-preview-768x266.png 768w, https://katinat.vn/wp-content/uploads/2024/04/Kat-Logo-fa-rgb-02-removebg-preview-320x111.png 320w, https://katinat.vn/wp-content/uploads/2024/04/Kat-Logo-fa-rgb-02-removebg-preview-480x166.png 480w, https://katinat.vn/wp-content/uploads/2024/04/Kat-Logo-fa-rgb-02-removebg-preview-800x277.png 800w, https://katinat.vn/wp-content/uploads/2024/04/Kat-Logo-fa-rgb-02-removebg-preview-465x161.png 465w, https://katinat.vn/wp-content/uploads/2024/04/Kat-Logo-fa-rgb-02-removebg-preview-695x241.png 695w, https://katinat.vn/wp-content/uploads/2024/04/Kat-Logo-fa-rgb-02-removebg-preview.png 848w" sizes="auto, (max-width: 300px) 100vw, 300px"></p>
+                        <h4></h4>
+                        <h4>VỀ CHÚNG TÔI</h4>
+                        <p>KATINAT – HÀNH TRÌNH CHINH PHỤC PHONG VỊ MỚI<br>
+                        KATINAT không ngừng theo đuổi sứ mệnh mang phong vị mới từ những vùng đất trứ danh tại Việt Nam và trên thế giới đến khách hàng.</p>
+                        <h4>LIÊN HỆ</h4>
+                        <ul class="contact_info list-unstyled">
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i> Email: cs@katinat.vn</li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i> Representative Store : 91 Đồng Khởi, Bến Nghé, Quận 1, Thành Phố Hồ Chí Minh</li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i> Working Office: 96-98-100 Trần Nguyên Đán, Phường 3, Quận Bình Thạnh, Thành Phố Hồ Chí Minh</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Customer Service: (028) 7300 1009</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="custom_html-22" class="widget_text widget widget_custom_html">
+                    <div class="textwidget custom-html-widget">
+                        <a href="https://www.facebook.com/KatinatSaigonKafe">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/katinatsaigonkafe/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </section>			
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

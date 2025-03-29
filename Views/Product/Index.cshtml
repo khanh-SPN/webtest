@@ -1,0 +1,38 @@
+﻿@model IEnumerable<webquanlydouong.Models.Product>
+
+@{
+    ViewData["Title"] = "Quản lý Sản phẩm";
+}
+
+<h2>Danh sách sản phẩm</h2>
+
+<p>
+    <a href="/Product/Create" class="btn btn-primary">Thêm sản phẩm mới</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Tên sản phẩm</th>
+            <th>Loại</th>
+            <th>Giá</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Category</td>
+                    <td>@product.Price</td>
+                    <td>
+                        <a href="/Product/Edit/@product.Id" class="btn btn-warning">Sửa</a>
+                        <a href="/Product/Delete/@product.Id" class="btn btn-danger">Xóa</a>
+                    </td>
+                </tr>
+        }
+    </tbody>
+</table>
