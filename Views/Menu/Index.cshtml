@@ -27,14 +27,21 @@
         <ul class="list-group">
             @foreach (var product in Model.Where(p => p.Category == "Drink"))
             {
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <!-- Thêm ảnh sản phẩm -->
+                            <img src="@product.ImageUrl" alt="@product.Name" class="img-thumbnail" style="width: 100px; height: 100px; object-fit: cover; margin-right: 15px;" />
                             <div>
                                 <strong>@product.Name</strong><br />
                                 <span class="text-muted">@product.Description</span>
                             </div>
-                            <span class="badge bg-primary rounded-pill">Giá: @product.Price VND</span>
-                            <a href="@Url.Action("AddToCart", "Menu", new { productId = product.Id, quantity = 1 })" class="btn btn-success btn-sm">Thêm vào giỏ</a>
-                        </li>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <!-- Căn chỉnh giá thẳng cột -->
+                            <span class="badge bg-primary rounded-pill" style="min-width: 100px; text-align: center;">Giá: @product.Price VND</span>
+                            <a href="@Url.Action("AddToCart", "Menu", new { productId = product.Id, quantity = 1 })" class="btn btn-success btn-sm ms-3">Thêm vào giỏ</a>
+                        </div>
+                    </li>
             }
         </ul>
     </div>
@@ -45,12 +52,19 @@
             @foreach (var product in Model.Where(p => p.Category == "Cake"))
             {
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <div>
-                            <strong>@product.Name</strong><br />
-                            <span class="text-muted">@product.Description</span>
+                        <div class="d-flex align-items-center">
+                            <!-- Thêm ảnh sản phẩm -->
+                            <img src="@product.ImageUrl" alt="@product.Name" class="img-thumbnail" style="width: 100px; height: 100px; object-fit: cover; margin-right: 15px;" />
+                            <div>
+                                <strong>@product.Name</strong><br />
+                                <span class="text-muted">@product.Description</span>
+                            </div>
                         </div>
-                        <span class="badge bg-primary rounded-pill">Giá: @product.Price VND</span>
-                        <a href="@Url.Action("AddToCart", "Menu", new { productId = product.Id, quantity = 1 })" class="btn btn-success btn-sm">Thêm vào giỏ</a>
+                        <div class="d-flex align-items-center">
+                            <!-- Căn chỉnh giá thẳng cột -->
+                            <span class="badge bg-primary rounded-pill" style="min-width: 100px; text-align: center;">Giá: @product.Price VND</span>
+                            <a href="@Url.Action("AddToCart", "Menu", new { productId = product.Id, quantity = 1 })" class="btn btn-success btn-sm ms-3">Thêm vào giỏ</a>
+                        </div>
                     </li>
             }
         </ul>
@@ -62,12 +76,19 @@
             @foreach (var product in Model.Where(p => p.Category == "Ice Cream"))
             {
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <div>
-                            <strong>@product.Name</strong><br />
-                            <span class="text-muted">@product.Description</span>
+                        <div class="d-flex align-items-center">
+                            <!-- Thêm ảnh sản phẩm -->
+                            <img src="@product.ImageUrl" alt="@product.Name" class="img-thumbnail" style="width: 100px; height: 100px; object-fit: cover; margin-right: 15px;" />
+                            <div>
+                                <strong>@product.Name</strong><br />
+                                <span class="text-muted">@product.Description</span>
+                            </div>
                         </div>
-                        <span class="badge bg-primary rounded-pill">Giá: @product.Price VND</span>
-                        <a href="@Url.Action("AddToCart", "Menu", new { productId = product.Id, quantity = 1 })" class="btn btn-success btn-sm">Thêm vào giỏ</a>
+                        <div class="d-flex align-items-center">
+                            <!-- Căn chỉnh giá thẳng cột -->
+                            <span class="badge bg-primary rounded-pill" style="min-width: 100px; text-align: center;">Giá: @product.Price VND</span>
+                            <a href="@Url.Action("AddToCart", "Menu", new { productId = product.Id, quantity = 1 })" class="btn btn-success btn-sm ms-3">Thêm vào giỏ</a>
+                        </div>
                     </li>
             }
         </ul>

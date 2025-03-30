@@ -6,7 +6,7 @@
 
 <h2>Sửa sản phẩm</h2>
 
-<form asp-action="Edit" method="post">
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
     <input type="hidden" asp-for="Id" />
 
     <div class="form-group">
@@ -34,14 +34,69 @@
         <textarea asp-for="Description" class="form-control"></textarea>
         <span asp-validation-for="Description" class="text-danger"></span>
     </div>
+
+    <!-- Hiển thị ảnh hiện tại nếu có -->
+    <div class="form-group">
+        <label class="control-label">Ảnh sản phẩm</label>
+        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+        {
+                <div>
+                    <img src="@Model.ImageUrl" alt="Ảnh sản phẩm" style="width: 100px; height: 100px; object-fit: cover;" />
+                </div>
+        }
+        else
+        {
+                <p>Không có ảnh hiện tại.</p>
+        }
+    </div>
+
+    <!-- Upload ảnh mới -->
+    <div class="form-group">
+        <label for="imgFile">Chọn ảnh mới (Tùy chọn)</label>
+        <input type="file" id="imgFile" name="imgFile" class="form-control" />
+        <button type="button" id="uploadBtn" class="btn btn-info">Upload ảnh</button>
+        <input type="hidden" id="imageUrl" name="imageUrl" value="@Model.ImageUrl" />
+        <span id="uploadStatus"></span>
+        <br>
+        <span id="imageLink"></span>
+    </div>
+
     <div class="form-group">
         <input type="submit" value="Cập nhật" class="btn btn-primary" />
         <a asp-action="Index" class="btn btn-secondary">Hủy</a>
     </div>
 </form>
 
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Tự động tải ảnh lên khi người dùng chọn ảnh
+    $('#uploadBtn').click(function () {
+        var fileInput = $('#imgFile')[0];  // Lấy phần tử input file
+        if (fileInput.files.length > 0) {
+            var formData = new FormData();
+            formData.append('imgFile', fileInput.files[0]);
+
+            $.ajax({
+                url: '/api/fileupload/upload',  // Đảm bảo URL này chính xác
+                type: 'POST',
+                data: formData,
+                processData: false, // Không xử lý dữ liệu
+                contentType: false, // Không sử dụng kiểu contentType mặc định
+                success: function (response) {
+                    if (response.success) {
+                        $('#imageUrl').val(response.imageUrl); // Lưu đường dẫn ảnh vào trường ẩn
+                        $('#uploadStatus').text("Ảnh đã được tải lên thành công!").css('color', 'green');
+                        $('#imageLink').html('<a href="' + response.imageUrl + '" target="_blank">Xem ảnh đã tải lên</a>');
+                    } else {
+                        $('#uploadStatus').text("Lỗi: " + response.message).css('color', 'red');
+                    }
+                },
+                error: function () {
+                    $('#uploadStatus').text("Có lỗi xảy ra khi tải ảnh.").css('color', 'red');
+                }
+            });
+        } else {
+            $('#uploadStatus').text("Vui lòng chọn ảnh!").css('color', 'red');
+        }
+    });
+</script>

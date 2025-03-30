@@ -10,6 +10,13 @@
 <ul>
     @foreach (var product in Model.Products)
     {
-            <li>@product.Name</li>
+            <li class="d-flex align-items-center">
+                <!-- Thêm ảnh sản phẩm -->
+                <img src="@product.ImageUrl" alt="@product.Name" class="img-thumbnail" style="width: 80px; height: 80px; object-fit: cover; margin-right: 15px;" />
+                <div>
+                    <strong>@product.Name</strong><br />
+                    <span class="text-muted">Giá: @product.Price VND</span>
+                </div>
+            </li>
     }
 </ul>

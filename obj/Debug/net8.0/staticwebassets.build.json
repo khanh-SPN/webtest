@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0oMoswAe6riYkiX6Chb2YSKAJBMcMB7/KH2gMhfBpQE=",
+  "Hash": "RcFM8eW5AbXEJfHEd5OPC0CcJBcM5TviKc+R7a8eokA=",
   "Source": "webquanlydouong",
   "BasePath": "_content/webquanlydouong",
   "Mode": "Default",
@@ -99,6 +99,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\adminbanner.jpg",
+      "SourceId": "webquanlydouong",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\",
+      "BasePath": "_content/webquanlydouong",
+      "RelativePath": "images/adminbanner#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x17sktyry8",
+      "Integrity": "S+VjBW9IRGCYAMqnkUy52lRtSa6scUaCVprEDLKr5O0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\adminbanner.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\ic_delete.png",
+      "SourceId": "webquanlydouong",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\",
+      "BasePath": "_content/webquanlydouong",
+      "RelativePath": "images/ic_delete#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e73yb172xf",
+      "Integrity": "RjzwUf5t3Erx8Fx4TDY2THkYU3t7E3P+xwRV7IhR6NY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ic_delete.png"
+    },
+    {
+      "Identity": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\ic_edit.png",
+      "SourceId": "webquanlydouong",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\",
+      "BasePath": "_content/webquanlydouong",
+      "RelativePath": "images/ic_edit#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cbf2uj6oai",
+      "Integrity": "+NtQnAtjpFfaKfSYwsfGnNtB5SERaMnCf6A4DsG9K18=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ic_edit.png"
+    },
+    {
+      "Identity": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\tunn.jpg",
+      "SourceId": "webquanlydouong",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\",
+      "BasePath": "_content/webquanlydouong",
+      "RelativePath": "images/tunn#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iazy80w65x",
+      "Integrity": "Km8WK+aKc68kkeZbmRA8nE4n2iIFoFDUbzkZPFB6Im4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tunn.jpg"
     },
     {
       "Identity": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\js\\site.js",
@@ -1481,6 +1565,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/adminbanner.jpg",
+      "AssetFile": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\adminbanner.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8379"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S+VjBW9IRGCYAMqnkUy52lRtSa6scUaCVprEDLKr5O0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 13:50:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S+VjBW9IRGCYAMqnkUy52lRtSa6scUaCVprEDLKr5O0="
+        }
+      ]
+    },
+    {
+      "Route": "images/adminbanner.x17sktyry8.jpg",
+      "AssetFile": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\adminbanner.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8379"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S+VjBW9IRGCYAMqnkUy52lRtSa6scUaCVprEDLKr5O0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 13:50:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x17sktyry8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/adminbanner.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S+VjBW9IRGCYAMqnkUy52lRtSa6scUaCVprEDLKr5O0="
+        }
+      ]
+    },
+    {
+      "Route": "images/ic_delete.e73yb172xf.png",
+      "AssetFile": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\ic_delete.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RjzwUf5t3Erx8Fx4TDY2THkYU3t7E3P+xwRV7IhR6NY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 14:06:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e73yb172xf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ic_delete.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RjzwUf5t3Erx8Fx4TDY2THkYU3t7E3P+xwRV7IhR6NY="
+        }
+      ]
+    },
+    {
+      "Route": "images/ic_delete.png",
+      "AssetFile": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\ic_delete.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RjzwUf5t3Erx8Fx4TDY2THkYU3t7E3P+xwRV7IhR6NY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 14:06:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RjzwUf5t3Erx8Fx4TDY2THkYU3t7E3P+xwRV7IhR6NY="
+        }
+      ]
+    },
+    {
+      "Route": "images/ic_edit.cbf2uj6oai.png",
+      "AssetFile": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\ic_edit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2307"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+NtQnAtjpFfaKfSYwsfGnNtB5SERaMnCf6A4DsG9K18=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 12:50:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cbf2uj6oai"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ic_edit.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+NtQnAtjpFfaKfSYwsfGnNtB5SERaMnCf6A4DsG9K18="
+        }
+      ]
+    },
+    {
+      "Route": "images/ic_edit.png",
+      "AssetFile": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\ic_edit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2307"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+NtQnAtjpFfaKfSYwsfGnNtB5SERaMnCf6A4DsG9K18=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 12:50:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+NtQnAtjpFfaKfSYwsfGnNtB5SERaMnCf6A4DsG9K18="
+        }
+      ]
+    },
+    {
+      "Route": "images/tunn.iazy80w65x.jpg",
+      "AssetFile": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\tunn.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "224284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Km8WK+aKc68kkeZbmRA8nE4n2iIFoFDUbzkZPFB6Im4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 12:41:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iazy80w65x"
+        },
+        {
+          "Name": "label",
+          "Value": "images/tunn.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Km8WK+aKc68kkeZbmRA8nE4n2iIFoFDUbzkZPFB6Im4="
+        }
+      ]
+    },
+    {
+      "Route": "images/tunn.jpg",
+      "AssetFile": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\tunn.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "224284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Km8WK+aKc68kkeZbmRA8nE4n2iIFoFDUbzkZPFB6Im4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 12:41:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Km8WK+aKc68kkeZbmRA8nE4n2iIFoFDUbzkZPFB6Im4="
         }
       ]
     },
@@ -6263,7 +6675,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 18:41:26 GMT"
+          "Value": "Sun, 30 Mar 2025 04:26:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6300,7 +6712,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 18:41:26 GMT"
+          "Value": "Sun, 30 Mar 2025 04:26:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6345,7 +6757,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 18:41:26 GMT"
+          "Value": "Sun, 30 Mar 2025 04:26:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6390,7 +6802,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 18:41:26 GMT"
+          "Value": "Sun, 30 Mar 2025 04:26:24 GMT"
         },
         {
           "Name": "Cache-Control",

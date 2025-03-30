@@ -316,7 +316,6 @@ C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\staticwebasse
 C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.webquanlydouong.props
 C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.webquanlydouong.props
 C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\webquanl.3487A6CB.Up2Date
 C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\webquanlydouong.dll
 C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\refint\webquanlydouong.dll
@@ -324,3 +323,4 @@ C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\webquanlydouo
 C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\webquanlydouong.genruntimeconfig.cache
 C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\ref\webquanlydouong.dll
 C:\Users\khanh\Desktop\New folder\webtest\webtest\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\khanh\Desktop\New folder\webtest\webtest\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

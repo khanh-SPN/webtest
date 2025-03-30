@@ -17,6 +17,7 @@
             <th>Tên sản phẩm</th>
             <th>Loại</th>
             <th>Giá</th>
+            <th>Ảnh</th> <!-- Cột cho ảnh sản phẩm -->
             <th>Hành động</th>
         </tr>
     </thead>
@@ -28,6 +29,16 @@
                     <td>@product.Name</td>
                     <td>@product.Category</td>
                     <td>@product.Price</td>
+                    <td>
+                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                    {
+                                <img src="@product.ImageUrl" alt="Image" style="width: 100px; height: 100px; object-fit: cover;" />
+                    }
+                    else
+                    {
+                                <span>Không có ảnh</span>
+                    }
+                    </td>
                     <td>
                         <a href="/Product/Edit/@product.Id" class="btn btn-warning">Sửa</a>
                         <a href="/Product/Delete/@product.Id" class="btn btn-danger">Xóa</a>

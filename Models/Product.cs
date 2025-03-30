@@ -13,7 +13,10 @@ namespace webquanlydouong.Models
         public string Category { get; set; }  // Đồ uống, Bánh, Kem
         public decimal Price { get; set; }
         public string Description { get; set; }
-        public virtual ICollection<Order> Orders { get; set; }
+
+        public string ImageUrl { get; set; }  //url hinh ảnh
+
+        public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
     }
 
 }

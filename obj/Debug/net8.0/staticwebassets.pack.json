@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\adminbanner.jpg",
+      "PackagePath": "staticwebassets\\images\\adminbanner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\ic_delete.png",
+      "PackagePath": "staticwebassets\\images\\ic_delete.png"
+    },
+    {
+      "Id": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\ic_edit.png",
+      "PackagePath": "staticwebassets\\images\\ic_edit.png"
+    },
+    {
+      "Id": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\images\\tunn.jpg",
+      "PackagePath": "staticwebassets\\images\\tunn.jpg"
+    },
+    {
       "Id": "C:\\Users\\khanh\\Desktop\\New folder\\webtest\\webtest\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

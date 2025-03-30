@@ -6,6 +6,22 @@
 
 <h2>Thêm sản phẩm mới</h2>
 
+<!-- Hiển thị thông báo thành công -->
+@if (TempData["SuccessMessage"] != null)
+{
+        <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+        </div>
+}
+
+<!-- Hiển thị thông báo lỗi -->
+@if (TempData["ErrorMessage"] != null)
+{
+        <div class="alert alert-danger">
+        @Html.Raw(TempData["ErrorMessage"])
+        </div>
+}
+
 <form asp-action="Create" method="post">
     <div class="form-group">
         <label asp-for="Name" class="control-label">Tên sản phẩm</label>
@@ -32,14 +48,68 @@
         <textarea asp-for="Description" class="form-control"></textarea>
         <span asp-validation-for="Description" class="text-danger"></span>
     </div>
+
+    <!-- Upload ảnh -->
+    <div class="form-group">
+        <label for="imgFile">Ảnh Sản Phẩm (Bắt buộc)</label>
+        <input type="file" id="imgFile" name="imgFile" class="form-control" />
+        <button type="button" id="uploadBtn" class="btn btn-info">Upload ảnh</button>
+        <input type="hidden" id="imageUrl" name="imageUrl" />
+        <span id="uploadStatus"></span>
+        <br>
+        <span id="imageLink"></span>
+    </div>
+
     <div class="form-group">
         <input type="submit" value="Thêm sản phẩm" class="btn btn-primary" />
         <a asp-action="Index" class="btn btn-secondary">Hủy</a>
     </div>
 </form>
 
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+
+  
+            // Tự động tải ảnh lên khi người dùng chọn ảnh
+                $('#uploadBtn').click(function () {
+console.log('========');
+        var fileInput = $('#imgFile')[0];  // Lấy phần tử input file
+        if (fileInput.files.length > 0) {
+            console.log("Đang tải ảnh lên...");
+
+            var formData = new FormData();
+            formData.append('imgFile', fileInput.files[0]);
+
+            $.ajax({
+                url: '/api/fileupload/upload',  // Đảm bảo URL này chính xác
+                type: 'POST',
+                data: formData,
+                processData: false, // Không xử lý dữ liệu
+                contentType: false, // Không sử dụng kiểu contentType mặc định
+                success: function (response) {
+                    console.log("Phản hồi từ API: ", response); // Log phản hồi từ API
+                    if (response.success) {
+                        console.log("Ảnh đã được tải lên thành công!");
+                        $('#imageUrl').val(response.imageUrl);
+                        $('#uploadStatus').text("Ảnh đã được tải lên thành công!").css('color', 'green');
+                        $('#imageLink').html('<a href="' + response.imageUrl + '" target="_blank">Xem ảnh đã tải lên</a>');
+                    } else {
+                        console.log("Lỗi tải ảnh: ", response.message);
+                        $('#uploadStatus').text("Lỗi: " + response.message).css('color', 'red');
+                    }
+                },
+                error: function () {
+                    console.log("Có lỗi xảy ra khi tải ảnh.");
+                    $('#uploadStatus').text("Có lỗi xảy ra khi tải ảnh.").css('color', 'red');
+                }
+            });
+        } else {
+            console.log("Chưa chọn ảnh.");
+            $('#uploadStatus').text("Vui lòng chọn ảnh!").css('color', 'red');
+        }
+    });
+
+           
+        </script>
+
