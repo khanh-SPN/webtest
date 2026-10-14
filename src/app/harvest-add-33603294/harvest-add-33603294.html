@@ -1,0 +1,43 @@
+<h1>Add harvest</h1>
+
+<p><a routerLink="/33603294/harvests">Back to harvests</a></p>
+
+<form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+  <div class="field">
+    <label for="variety">Variety</label>
+    <input id="variety" type="text" formControlName="variety" />
+    @if (showError('variety')) {
+      <span class="error">Variety is required.</span>
+    }
+  </div>
+
+  <div class="field">
+    <label for="harvestedBy">Harvested by</label>
+    <input id="harvestedBy" type="text" formControlName="harvestedBy" />
+    @if (showError('harvestedBy')) {
+      <span class="error">Harvested by is required.</span>
+    }
+  </div>
+
+  <div class="field">
+    <label for="harvestDate">Harvest date</label>
+    <input id="harvestDate" type="date" formControlName="harvestDate" />
+    @if (showError('harvestDate')) {
+      <span class="error">Harvest date is required.</span>
+    }
+  </div>
+
+  <div class="field">
+    <label for="notes">Notes</label>
+    <textarea id="notes" rows="4" formControlName="notes"></textarea>
+    @if (showError('notes')) {
+      <span class="error">Notes are required.</span>
+    }
+  </div>
+
+  @if (errorMessage()) {
+    <p class="error">{{ errorMessage() }}</p>
+  }
+
+  <button type="submit" [disabled]="saving()">Add harvest</button>
+</form>

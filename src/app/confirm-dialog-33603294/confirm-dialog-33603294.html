@@ -1,0 +1,8 @@
+<dialog #dialog aria-labelledby="confirm-title" (cancel)="cancelled.emit()">
+  <h2 id="confirm-title">Confirm delete</h2>
+  <p>{{ message() }}</p>
+  <div class="actions">
+    <button type="button" (click)="cancelled.emit()">Cancel</button>
+    <button type="button" class="delete" (click)="confirmed.emit()">Delete</button>
+  </div>
+</dialog>

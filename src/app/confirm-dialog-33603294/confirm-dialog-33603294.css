@@ -1,0 +1,27 @@
+dialog {
+  max-width: 24rem;
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 30%);
+}
+
+dialog::backdrop {
+  background: rgb(0 0 0 / 45%);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.delete {
+  background: #b00020;
+  border-color: #b00020;
+  color: #fff;
+}

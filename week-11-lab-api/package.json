@@ -1,0 +1,14 @@
+{
+  "name": "fit2095-week-11-lab-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The provided backend for the FIT2095 Week 11 lab assessment. Data lives in memory.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.4"
+  }
+}

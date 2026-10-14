@@ -1,0 +1,21 @@
+form {
+  max-width: 32rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  font: inherit;
+  padding: 0.4rem 0.5rem;
+}
+
+.error {
+  color: #b00020;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,42 @@
+<h1>Wrenfield Community Orchard</h1>
+
+<p><a routerLink="/33603294/harvests/new">Add</a></p>
+
+@if (errorMessage()) {
+  <p class="error">{{ errorMessage() }}</p>
+}
+
+<table>
+  <thead>
+    <tr>
+      <th>Variety</th>
+      <th>Harvested by</th>
+      <th>Harvest date</th>
+      <th>Notes</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (harvest of harvests(); track harvest.id) {
+      <tr>
+        <td>{{ harvest.variety }}</td>
+        <td>{{ harvest.harvestedBy }}</td>
+        <td>{{ harvest.harvestDate | date: 'd MMM y' }}</td>
+        <td>{{ harvest.notes | shorten33603294: 35 }}</td>
+        <td><button type="button" (click)="askToDelete(harvest)">Delete</button></td>
+      </tr>
+    } @empty {
+      <tr>
+        <td colspan="5">No harvests recorded.</td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+@if (pendingDelete(); as harvest) {
+  <app-confirm-dialog-33603294
+    message="Delete the {{ harvest.variety }} harvest by {{ harvest.harvestedBy }}?"
+    (cancelled)="cancelDelete()"
+    (confirmed)="confirmDelete(harvest)"
+  />
+}
